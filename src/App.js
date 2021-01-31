@@ -12,7 +12,9 @@ export default function App() {
   };
   const increase = () => {
     setTimeout(() => {
-      setValue((prevState) => {});
+      setValue((prevState) => {
+        return prevState + 1;
+      });
     }, delay);
   };
   return (
